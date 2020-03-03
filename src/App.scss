@@ -1,0 +1,35 @@
+html, body, #root, .app {
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  &.about {
+    font-size: 16px;
+    margin: 0 auto;
+    width: 700px;
+  }
+}
+
+.app {
+  nav {
+    display: flex;
+    background: purple;
+    div {
+      padding: 20px 15px;
+      align-items: center;
+      &:hover {
+        background-color: darken(purple, 10%);
+      }
+      a {
+        height: inherit;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}

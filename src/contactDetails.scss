@@ -1,0 +1,40 @@
+.details {
+    display: flex;
+    flex-direction: column;
+    &.content {
+        font-size: 14px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .info {
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+    .field {
+        width: 100%;
+        display: flex;
+        .title, .data {
+            width: 50%;
+            padding: 15px 10px;
+        }
+        .title {
+            background-color: darkblue;
+            color: white;
+        }
+    }
+    .actions {
+        margin-top: 10px;
+        .edit, .delete {
+            border: none;
+            border-radius: 4px;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+        }
+        .delete {
+            margin-left: 5px;
+            background-color: red;
+        }
+    }
+}
